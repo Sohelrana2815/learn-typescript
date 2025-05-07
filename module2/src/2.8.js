@@ -9,11 +9,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 {
-    // promise
-    // simulate
     const createPromise = () => {
         return new Promise((resolve, reject) => {
-            const data = "something";
+            const data = { something: "something" };
             if (data) {
                 resolve(data);
             }
