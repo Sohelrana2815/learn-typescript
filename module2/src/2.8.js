@@ -9,6 +9,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 {
+    const getToDo = () => __awaiter(void 0, void 0, void 0, function* () {
+        try {
+            const response = yield fetch("https://jsonplaceholder.typicode.com/todos/1");
+            const data = yield response.json();
+            console.log("ToDo data:", data);
+            return data;
+        }
+        catch (error) {
+            console.log("failed to load ToDo:", error);
+        }
+    });
+    getToDo();
     const createPromise = () => {
         return new Promise((resolve, reject) => {
             const data = { something: "something" };

@@ -1,6 +1,27 @@
 {
   // promise
 
+  type Todo = {
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
+  };
+
+  const getToDo = async () => {
+    try {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos/1"
+      );
+      const data = await response.json();
+      console.log("ToDo data:", data);
+      return data;
+    } catch (error) {
+      console.log("failed to load ToDo:", error);
+    }
+  };
+  getToDo();
+
   // simulate
 
   type Something = {
