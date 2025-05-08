@@ -1,10 +1,11 @@
+"use strict";
 {
     //  Functions, Optional and literal types
     function userInfo(name, age, role) {
-        console.log("name: ".concat(name));
-        console.log("age: ".concat(age));
+        console.log(`name: ${name}`);
+        console.log(`age: ${age}`);
         if (role) {
-            console.log("role: ".concat(role));
+            console.log(`role: ${role}`);
         }
         else {
             console.log("Role not provided");

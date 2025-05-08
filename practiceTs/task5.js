@@ -1,3 +1,4 @@
+"use strict";
 {
     // Task 5: Function Type
     // Objective: Write a function that reverses a string.
@@ -9,8 +10,8 @@
     // Input: "hello"
     // Output: "olleh"
     function reverseString(str) {
-        var reversed = "";
-        for (var i = str.length - 1; i >= 0; i--) {
+        let reversed = "";
+        for (let i = str.length - 1; i >= 0; i--) {
             reversed += str[i]; // Index of the string
         }
         return reversed;

@@ -1,8 +1,9 @@
+"use strict";
 {
     function describeAdmin(user) {
-        return "Admin User: Name - ".concat(user.name, ", Email - ").concat(user.email, ", Admin Level - ").concat(user.adminLevel, " ");
+        return `Admin User: Name - ${user.name}, Email - ${user.email}, Admin Level - ${user.adminLevel} `;
     }
-    var admin1 = {
+    const admin1 = {
         name: "Sohel",
         email: "s@gmail.com",
         adminLevel: 5,

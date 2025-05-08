@@ -1,3 +1,4 @@
+"use strict";
 {
     // Task 12: Never Type
     // Objective: Use the never type for functions that don’t return.

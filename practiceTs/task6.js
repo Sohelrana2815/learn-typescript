@@ -1,3 +1,4 @@
+"use strict";
 {
     // Task 6: Spread and Rest Operators, Destructuring
     // Objective: Write a function that uses the rest operator for variable-length arguments.
@@ -20,12 +21,8 @@
     //   console.log(sum(1, 2, 3, 4, 5, 6));
     //   console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9));
     // Task 6
-    var sum = function () {
-        var numbers = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            numbers[_i] = arguments[_i];
-        }
-        var result = numbers.reduce(function (acc, num) { return acc + num; }, 0);
+    const sum = (...numbers) => {
+        const result = numbers.reduce((acc, num) => acc + num, 0);
         return result;
     };
     console.log(sum(1, 2, 3, 4, 5, 6));

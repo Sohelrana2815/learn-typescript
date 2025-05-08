@@ -1,3 +1,4 @@
+"use strict";
 {
     // Task 11: Unknown Type
     // Objective: Handle different types with the unknown type.

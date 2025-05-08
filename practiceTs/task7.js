@@ -1,3 +1,4 @@
+"use strict";
 {
     // Task 7: Type Assertion and Narrowing
     // Objective: Write a function that behaves differently based on the input type.
@@ -7,7 +8,7 @@
     // Return the length if the input is a string.
     // Return the square if the input is a number.
     // type assertion
-    var anything = void 0;
+    let anything;
     anything = "Next level Web Development";
     anything = 1111;
     anything;

@@ -1,3 +1,4 @@
+"use strict";
 {
     // Task1
     //   Task 1: Basic Data Types and First Program
@@ -6,7 +7,7 @@
     // Create a TypeScript program.
     // Print the following message to the console:
     // Hello World, I will complete this course successfully and become a Next level Web Developer!
-    var message = "Hello World, I will complete this course successfully and become a Next level Web Developer!";
+    const message = "Hello World, I will complete this course successfully and become a Next level Web Developer!";
     console.log(message);
     //
 }

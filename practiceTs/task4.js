@@ -1,16 +1,17 @@
+"use strict";
 {
-    var bookItem = {
+    const bookItem = {
         title: "The Great Gatsby",
         author: "F. Scott Fitzgerald",
         pages: 120,
     };
-    var magazineItem = {
+    const magazineItem = {
         title: "National Geographic",
         issue: 10,
         publisher: "national Geographic Society",
     };
     // hybrid item
-    var hybridItem = {
+    const hybridItem = {
         title: "Science today",
         author: "Various",
         pages: 50,
