@@ -17,11 +17,13 @@
     });
   }
 
-  async function main() {
-    const user = await fetchUserData();
+  async function main(): Promise<User> {
+    const user: User = await fetchUserData();
     return user;
   }
+  const showData = main();
 
-  main();
+  console.log(showData);
+
   //
 }
