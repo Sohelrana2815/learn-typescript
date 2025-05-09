@@ -34,6 +34,7 @@
     class Circle extends Shape {
         constructor(radius) {
             super();
+            // Initialize
             this.radius = radius;
         }
         getArea() {
@@ -48,8 +49,17 @@
             this.width = width;
         }
         getArea() {
-            return this.height * this.height;
+            return this.height * this.width;
         }
     }
+    const getShapeArea = (param) => {
+        console.log(param.getArea());
+    };
+    const shape1 = new Shape();
+    const circleArea1 = new Circle(10);
+    const rectangleArea1 = new Rectangle(10, 20);
+    getShapeArea(shape1);
+    getShapeArea(circleArea1);
+    getShapeArea(rectangleArea1);
     //
 }

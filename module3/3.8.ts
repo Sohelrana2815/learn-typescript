@@ -43,6 +43,7 @@
 
     constructor(radius: number) {
       super();
+      // Initialize
       this.radius = radius;
     }
     getArea(): number {
@@ -62,9 +63,19 @@
       this.width = width;
     }
     getArea(): number {
-      return this.height * this.height;
+      return this.height * this.width;
     }
   }
 
+  const getShapeArea = (param: Shape) => {
+    console.log(param.getArea());
+  };
+
+  const shape1 = new Shape();
+  const circleArea1 = new Circle(10);
+  const rectangleArea1 = new Rectangle(10, 20);
+  getShapeArea(shape1);
+  getShapeArea(circleArea1);
+  getShapeArea(rectangleArea1);
   //
 }
